@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.0</Version>
+    <Authors>Sarin Na Wangkanai</Authors>
+    <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/IdentityAdmin/IdentityAdmin/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageId>Wangkanai.IdentityAdmin.Core</PackageId>
   </PropertyGroup>
 
 </Project>
