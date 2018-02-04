@@ -24,7 +24,7 @@ namespace IdentityAdmin
 
         public async Task Invoke(HttpContext context)
         {
-            if (context == null) throw new ArgumentNullException(nameof(context)));
+            if (context == null) throw new ArgumentNullException(nameof(context));
 
             await _next(context);
         }
