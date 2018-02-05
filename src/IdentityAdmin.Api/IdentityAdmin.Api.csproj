@@ -14,6 +14,7 @@
     <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore;identityserver;admin;api</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
