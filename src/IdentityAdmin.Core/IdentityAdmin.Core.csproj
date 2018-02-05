@@ -15,6 +15,12 @@ Core Module</Description>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
+    <RootNamespace>IdentityAdmin</RootNamespace>
+    <Company>IdentityAdmin</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
+  </ItemGroup>
 
 </Project>
