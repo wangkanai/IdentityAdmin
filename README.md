@@ -1,5 +1,8 @@
 # About IdentityAdmin
 
+[![Build status](https://ci.appveyor.com/api/projects/status/p9i8u0c7thwel02x?svg=true)](https://ci.appveyor.com/project/wangkanai/IdentityAdmin) 
+[![NuGet](https://img.shields.io/nuget/v/Wangkanai.IdentityAdmin.svg?maxAge=2592000)](https://www.nuget.org/packages/Wangkanai.IdentityAdmin/)
+
 IdentityAdmin is a free, open source administration portal for managing [IdentityServer](https://github.com/IdentityServer/). Founded and maintained by Sarin Na Wangkanai, IdentityAdmin will allow easier implementation of IdentityServer.
 
 ## Overview
