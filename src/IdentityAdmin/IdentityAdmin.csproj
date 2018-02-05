@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IdentityAdmin.Api\IdentityAdmin.Api.csproj" />
     <ProjectReference Include="..\IdentityAdmin.Core\IdentityAdmin.Core.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,25 +8,30 @@ using System.Threading.Tasks;
 
 namespace IdentityAdmin.Api
 {
+    [Authorize]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public IEnumerable<UserViewModel> Get()
         {
-            var users = await BuildUserViewModelAsync();
-            return View();
-        }
+            var users = new List<UserViewModel> {
+                new UserViewModel
+                {
+                    Username = "sarin",
+                    Firstname = "Sarin",
+                    Lastname = "Na Wangkanai"
+                }
+            };
 
-        private async Task<UserViewModel> BuildUserViewModelAsync()
-        {
-            await Task.Delay(100);
-
-            return new UserViewModel { };
+            return users;
         }
     }
 
     public class UserViewModel
     {
-
+        public string Username { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
     }
 }
