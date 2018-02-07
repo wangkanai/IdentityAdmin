@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Wangkanai.IdentityAdmin.Api</PackageId>
     <VersionPrefix>0.0.0</VersionPrefix>
+    <VersionSuffix>alpha001</VersionSuffix>
     <Authors>Sarin Na Wangkanai</Authors>
     <Company>IdentityAdmin</Company>
     <Description>IdentityAdmin Api</Description>
