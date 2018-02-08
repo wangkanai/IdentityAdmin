@@ -7,7 +7,7 @@
     <VersionSuffix>alpha001</VersionSuffix>
     <Authors>Sarin Na Wangkanai</Authors>
     <Company>IdentityAdmin</Company>
-    <Description>IdentityAdmin Api</Description>
+    <Description>IdentityServer Administration Management Portal Web Api Module</Description>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <PackageLicenseUrl>https://github.com/IdentityAdmin/IdentityAdmin/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
