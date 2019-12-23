@@ -8,7 +8,6 @@
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore;identityserver;admin;api</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
