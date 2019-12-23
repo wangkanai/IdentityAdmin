@@ -3,4 +3,4 @@ dotnet --version
 dotnet restore
 dotnet build -c Release
 dotnet test
-dotnet pack ./src/IdentityAdmin/src/IdentityAdmin.csproj -c Release -o .\artifacts
+# dotnet pack ./src/IdentityAdmin/src/IdentityAdmin.csproj -c Release -o .\artifacts
