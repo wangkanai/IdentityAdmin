@@ -22,13 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAdmin.Api", "Identi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin", "src\IdentityAdmin\src\IdentityAdmin.csproj", "{185F9651-155F-409E-9C17-1332DD8DAB3F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Tests", "src\IdentityAdmin\test\IdentityAdmin.Tests.csproj", "{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Api", "src\IdentityAdmin.Api\src\IdentityAdmin.Api.csproj", "{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Core", "src\IdentityAdmin.Core\src\IdentityAdmin.Core.csproj", "{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Core.Tests", "src\IdentityAdmin.Core\test\IdentityAdmin.Core.Tests.csproj", "{755FDC96-94AF-4C82-AF22-5A237761B803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +40,6 @@ Global
 		{185F9651-155F-409E-9C17-1332DD8DAB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{185F9651-155F-409E-9C17-1332DD8DAB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{185F9651-155F-409E-9C17-1332DD8DAB3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,10 +48,6 @@ Global
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{755FDC96-94AF-4C82-AF22-5A237761B803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{755FDC96-94AF-4C82-AF22-5A237761B803}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{755FDC96-94AF-4C82-AF22-5A237761B803}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{755FDC96-94AF-4C82-AF22-5A237761B803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,10 +55,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{370D8ED3-44BB-4652-A236-0BA4FD65C893} = {62A6C056-D63C-4600-BB0A-63D00209B41B}
 		{185F9651-155F-409E-9C17-1332DD8DAB3F} = {5DA8D4E1-26D6-41F5-8581-379AA7067DE6}
-		{3A6EDFF1-63FF-45BD-AD51-A2CC876C5C87} = {5DA8D4E1-26D6-41F5-8581-379AA7067DE6}
 		{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72} = {150632E7-75FE-4165-982E-099FE1E19771}
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E} = {3E928435-0BA7-412E-A70F-D2E6F677EFF5}
-		{755FDC96-94AF-4C82-AF22-5A237761B803} = {3E928435-0BA7-412E-A70F-D2E6F677EFF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68A483B5-989E-42FF-81F9-F1E65E3D6CED}

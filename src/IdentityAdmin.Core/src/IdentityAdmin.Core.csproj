@@ -10,7 +10,6 @@
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
-    <RootNamespace>IdentityAdmin</RootNamespace>
     <Company>IdentityAdmin</Company>
   </PropertyGroup>
 
