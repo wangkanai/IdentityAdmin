@@ -5,8 +5,6 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Sarin Na Wangkanai</Authors>
     <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/IdentityAdmin/IdentityAdmin/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/IdentityAdmin/IdentityAdmin/master/asset/Identity-admin-small.png</PackageIconUrl>
     <Description>IdentityServer Administration Management Portal Core Module</Description>
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>

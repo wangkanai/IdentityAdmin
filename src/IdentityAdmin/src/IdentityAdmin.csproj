@@ -6,23 +6,34 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Sarin Na Wangkanai</Authors>
     <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/IdentityAdmin/IdentityAdmin/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/IdentityAdmin/IdentityAdmin/master/asset/Identity-admin-small.png</PackageIconUrl>
     <Description>IdentityServer Administration Management Portal</Description>
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
     <Company>IdentityAdmin</Company>
+    <PackageIcon>Identity-admin-small.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\IdentityAdmin.Api\src\IdentityAdmin.Api.csproj" />
     <ProjectReference Include="..\..\IdentityAdmin.Core\src\IdentityAdmin.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\asset\Identity-admin-small.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

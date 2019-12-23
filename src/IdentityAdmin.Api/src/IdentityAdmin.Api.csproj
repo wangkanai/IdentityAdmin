@@ -6,10 +6,6 @@
     <Authors>Sarin Na Wangkanai</Authors>
     <Description>IdentityServer Administration Management Portal Web Api Module</Description>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
-    <PackageLicenseUrl>https://github.com/IdentityAdmin/IdentityAdmin/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/IdentityAdmin/IdentityAdmin/master/asset/Identity-admin-small.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore;identityserver;admin;api</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
