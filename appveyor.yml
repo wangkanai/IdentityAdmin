@@ -1,20 +1,28 @@
+version: 0.0.100-alpha1-build{build}
+image:
+  - Visual Studio 2019
 init:
   - git config --global core.autocrlf true
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  version_prefix: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+pull_requests:
+  do_not_increment_build_number: true
 branches:
   only:
     - master
-    - release
     - dev
+    - /^release\/.$/
     - /^(.*\/)?ci-.*$/
 build_script:
-  - ps: .\run.ps1 default-build
+  - ps: ./run.ps1
 clone_depth: 1
-environment:
-  global:
-    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-    DOTNET_CLI_TELEMETRY_OPTOUT: 1
-test: off
+test: 'off'
 artifacts:
   - path: '**\*.nupkg'
-deploy: off
-os: Visual Studio 2017
