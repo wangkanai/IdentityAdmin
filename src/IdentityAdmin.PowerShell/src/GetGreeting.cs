@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Wangkanai.IdentityAdmin.PowerShell
 {
-    class GetGreeting
+    [CmdLet()]
+    public class GetGreeting : CmdLet
     {
     }
 }
