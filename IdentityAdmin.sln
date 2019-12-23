@@ -20,11 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAdmin.Core", "Ident
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAdmin.Api", "IdentityAdmin.Api", "{150632E7-75FE-4165-982E-099FE1E19771}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin", "src\IdentityAdmin\src\IdentityAdmin.csproj", "{185F9651-155F-409E-9C17-1332DD8DAB3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin", "src\IdentityAdmin\src\Wangkanai.IdentityAdmin.csproj", "{185F9651-155F-409E-9C17-1332DD8DAB3F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Api", "src\IdentityAdmin.Api\src\IdentityAdmin.Api.csproj", "{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Api", "src\IdentityAdmin.Api\src\Wangkanai.IdentityAdmin.Api.csproj", "{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityAdmin.Core", "src\IdentityAdmin.Core\src\IdentityAdmin.Core.csproj", "{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Core", "src\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj", "{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

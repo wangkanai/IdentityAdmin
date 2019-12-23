@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Threading.Tasks;
 
-namespace IdentityAdmin
+namespace Wangkanai.IdentityAdmin
 {
     public class IdentityAdminMiddleware
     {

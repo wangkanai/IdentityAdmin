@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IdentityAdmin
+namespace Wangkanai.IdentityAdmin
 {
     public class IdentityAdminService : IIdentityAdminService
     {

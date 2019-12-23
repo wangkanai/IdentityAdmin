@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace IdentityAdmin.Api
+namespace Wangkanai.IdentityAdmin.Api
 {
     [Authorize(Roles = "Administrator")]
     [Route("api/[controller]")]

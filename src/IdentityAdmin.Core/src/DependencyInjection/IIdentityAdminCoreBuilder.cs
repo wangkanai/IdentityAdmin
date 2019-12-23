@@ -3,7 +3,7 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IdentityAdmin.Builder
+namespace Wangkanai.IdentityAdmin.Builder
 {
     public interface IIdentityAdminCoreBuilder
     {

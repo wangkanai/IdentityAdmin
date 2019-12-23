@@ -4,7 +4,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace IdentityAdmin.Builder
+namespace Wangkanai.IdentityAdmin.Builder
 {
     public class IdentityAdminBuilder : IIdentityAdminBuilder
     {

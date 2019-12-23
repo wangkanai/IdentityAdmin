@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IdentityAdmin.Api
+namespace Wangkanai.IdentityAdmin.Api
 {
     [Authorize(Roles ="Administrator")]
     [Route("api/[controller]")]

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Options;
 using System;
 
-namespace IdentityAdmin
+namespace Wangkanai.IdentityAdmin
 {
     public static class IdentityAdminBuilderExtensions
     {

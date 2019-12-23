@@ -1,4 +1,4 @@
-﻿using IdentityAdmin.Builder;
+﻿using Wangkanai.IdentityAdmin.Builder;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IdentityAdmin.Api\src\IdentityAdmin.Api.csproj" />
-    <ProjectReference Include="..\..\IdentityAdmin.Core\src\IdentityAdmin.Core.csproj" />
+    <ProjectReference Include="..\..\IdentityAdmin.Api\src\Wangkanai.IdentityAdmin.Api.csproj" />
+    <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj" />
   </ItemGroup>
 
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
