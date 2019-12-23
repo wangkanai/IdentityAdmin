@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Wangkanai.IdentityAdmin.PowerShell
 {
-    [CmdLet()]
+    [CmdLet]
     public class GetGreeting : CmdLet
     {
     }
