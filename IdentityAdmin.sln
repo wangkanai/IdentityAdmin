@@ -26,6 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Api
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Core", "src\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj", "{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAdmin.PowerShell", "IdentityAdmin.PowerShell", "{77C6CB6C-65E5-4A35-9F36-50ABEF1CF558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.PowerShell", "src\IdentityAdmin.PowerShell\src\Wangkanai.IdentityAdmin.PowerShell.csproj", "{47A93696-8AC0-4799-A0D9-5C34350F1234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47A93696-8AC0-4799-A0D9-5C34350F1234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A93696-8AC0-4799-A0D9-5C34350F1234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A93696-8AC0-4799-A0D9-5C34350F1234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A93696-8AC0-4799-A0D9-5C34350F1234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{185F9651-155F-409E-9C17-1332DD8DAB3F} = {5DA8D4E1-26D6-41F5-8581-379AA7067DE6}
 		{7EA40EE3-A6E4-4ACD-9A99-0D965B0F7B72} = {150632E7-75FE-4165-982E-099FE1E19771}
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E} = {3E928435-0BA7-412E-A70F-D2E6F677EFF5}
+		{47A93696-8AC0-4799-A0D9-5C34350F1234} = {77C6CB6C-65E5-4A35-9F36-50ABEF1CF558}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68A483B5-989E-42FF-81F9-F1E65E3D6CED}
