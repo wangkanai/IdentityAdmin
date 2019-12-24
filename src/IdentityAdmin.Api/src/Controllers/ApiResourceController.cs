@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace Wangkanai.IdentityAdmin.Api
+namespace Wangkanai.IdentityAdmin.Controllers
 {
     [Authorize(Roles = "Administrator")]
     [Route("api/[controller]")]
-    public class ClientController : Controller
+    public class ApiResourceController : Controller
     {
         // GET: api/<controller>
         [HttpGet]
