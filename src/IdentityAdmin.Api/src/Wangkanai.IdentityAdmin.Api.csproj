@@ -8,6 +8,7 @@
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore;identityserver;admin;api</PackageTags>
+    <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
