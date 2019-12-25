@@ -25,6 +25,8 @@ nuget:
   project_feed: true
 install:
   - cmd: nuget sources add -Name MyAccountFeed -Source https://www.myget.org/F/wangkanai/api/v3/index.json
+before_build:
+  - cmd: nuget restore
 build_script:
   - ps: ./run.ps1
 clone_depth: 1
