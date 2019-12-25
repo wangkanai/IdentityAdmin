@@ -21,7 +21,7 @@ branches:
     - /^release\/.$/
     - /^(.*\/)?ci-.*$/
 install:
-  - ps: nuget sources add -Name MyAccountFeed -Source https://www.myget.org/F/wangkanai/api/v3/index.json
+  - ps: nuget sources add -Name MyAccountFeed -Source https://www.myget.org/F/wangkanai/api/v2
 build_script:
   - ps: ./run.ps1
 clone_depth: 1
