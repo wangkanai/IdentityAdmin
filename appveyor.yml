@@ -26,7 +26,7 @@ nuget:
 install:
   - cmd: nuget sources add -Name MyAccountFeed -Source https://www.myget.org/F/wangkanai/api/v3/index.json
 before_build:
-  - cmd: nuget restore
+  - cmd: nuget restore -Verbosity normal
 build:
   verbosity: minimal
 build_script:
