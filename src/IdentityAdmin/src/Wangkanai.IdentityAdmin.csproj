@@ -10,9 +10,9 @@
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 
-    <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Wangkanai/IdentityAdmin.git</RepositoryUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
 
     <LangVersion>8.0</LangVersion>
