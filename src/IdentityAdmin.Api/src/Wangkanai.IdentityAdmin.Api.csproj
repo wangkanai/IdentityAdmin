@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <PackageId>Wangkanai.IdentityAdmin.Api</PackageId>
+
     <Authors>Sarin Na Wangkanai</Authors>
     <Description>IdentityServer Administration Management Portal Web Api Module</Description>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
