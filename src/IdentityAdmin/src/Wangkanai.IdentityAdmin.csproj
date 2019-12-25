@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>0.0.2</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.100</Version>
     <Authors>Sarin Na Wangkanai</Authors>
     <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
     <Description>IdentityServer Administration Management Portal</Description>

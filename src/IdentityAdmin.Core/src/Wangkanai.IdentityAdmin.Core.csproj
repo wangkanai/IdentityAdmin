@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+
     <Authors>Sarin Na Wangkanai</Authors>
     <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
     <Description>IdentityServer Administration Management Portal Core Module</Description>
