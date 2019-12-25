@@ -1,4 +1,4 @@
-./dotnet-install.ps1 -Channel Current -version 3.0.100
+#./dotnet-install.ps1 -Channel Current -version 3.1.100
 dotnet --version
 dotnet restore
 dotnet build

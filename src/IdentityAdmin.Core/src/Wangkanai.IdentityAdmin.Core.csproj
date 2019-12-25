@@ -4,10 +4,11 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <Authors>Sarin Na Wangkanai</Authors>
-    <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
     <Description>IdentityServer Administration Management Portal Core Module</Description>
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
+
+    <PackageProjectUrl>https://github.com/IdentityAdmin/IdentityAdmin</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/IdentityAdmin/IdentityAdmin.git</RepositoryUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
