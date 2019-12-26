@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Wangkanai.Detection" Version="2.0.0-beta14" />
     <PackageReference Include="Wangkanai.Responsive" Version="2.0.0-beta14" />
   </ItemGroup>
 
