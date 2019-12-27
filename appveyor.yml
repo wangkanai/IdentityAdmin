@@ -23,8 +23,6 @@ branches:
 nuget:
   account_feed: true
   project_feed: true
-install:
-  - cmd: nuget sources add -Name MyAccountFeed -Source https://www.myget.org/F/wangkanai/api/v3/index.json
 before_build:
   - cmd: nuget restore -Verbosity quiet
 build:
