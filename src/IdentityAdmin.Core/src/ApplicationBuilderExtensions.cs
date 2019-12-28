@@ -19,6 +19,7 @@ namespace Microsoft.Extensions.DependencyInjection
             VerifyIsRegistered(app);
 
             app.UseMiddleware<IdentityAdminMiddleware>();
+
             return app;
         }
 
