@@ -19,6 +19,7 @@
 
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
 
+    <PackageIcon>Identity-admin-small.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,13 @@
   <ItemGroup>
     <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj" />
     <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\asset\Identity-admin-small.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
