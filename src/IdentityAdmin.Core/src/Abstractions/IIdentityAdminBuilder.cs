@@ -9,4 +9,9 @@ namespace Wangkanai.IdentityAdmin
     {
         IServiceCollection Services { get; }
     }
+
+    public interface IIdentityAdminCoreBuilder
+    {
+        IServiceCollection Services { get; }
+    }
 }
