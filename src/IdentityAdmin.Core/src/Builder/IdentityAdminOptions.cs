@@ -5,7 +5,10 @@ namespace Wangkanai.IdentityAdmin.Builder
 {
     public class IdentityAdminOptions
     {
-        public IdentityAdminOptions() { }
+        public IdentityAdminOptions()
+        {
+        }
+
         public bool Demo { get; set; } = false;
     }
 }

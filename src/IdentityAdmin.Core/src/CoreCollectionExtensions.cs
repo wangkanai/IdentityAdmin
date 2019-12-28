@@ -5,19 +5,24 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using Wangkanai.IdentityAdmin;
 using Wangkanai.IdentityAdmin.Builder;
-using Wangkanai.Responsive.Core.Internal;
+using Wangkanai.IdentityAdmin.Internal;
+using Wangkanai.IdentityAdmin.Services;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminCoreCollectionExtensions
     {
-        public static IIdentityAdminCoreBuilder AddIdentityAdminCore(this IServiceCollection services)
+        public static IIdentityAdminCoreBuilder AddIdentityAdminCore(
+            this IServiceCollection services)
         {
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
-            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+
+            services.AddOptions();
+
+            services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
 
             return new IdentityAdminCoreBuilder(services);
         }

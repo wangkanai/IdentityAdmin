@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Wangkanai.IdentityAdmin
 {
-    public interface IIdentityAdminBuilder
+    public interface IIdentityAdminCoreBuilder
     {
         IServiceCollection Services { get; }
     }

@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -34,7 +33,7 @@ namespace WebApp
             try
             {
                 var host = CreateHostBuilder(args).Build();
-                
+
                 Log.Information("Starting host...");
                 host.Run();
                 return 0;
