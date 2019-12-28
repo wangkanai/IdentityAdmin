@@ -2,8 +2,6 @@
 // The Apache v2. See License.txt in the project root for license information.
 
 using Microsoft.AspNetCore.Http;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Wangkanai.IdentityAdmin
 {

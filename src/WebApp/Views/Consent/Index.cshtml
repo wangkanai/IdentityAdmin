@@ -17,12 +17,12 @@
     <div class="row">
         <div class="col-sm-8">
             <partial name="_ValidationSummary" />
-            
+
             <form asp-action="Index" class="consent-form">
                 <input type="hidden" asp-for="ReturnUrl" />
 
                 <div>Uncheck the permissions you do not wish to grant.</div>
-                
+
                 @if (Model.IdentityScopes.Any())
                 {
                     <div class="panel panel-default consent-buttons">

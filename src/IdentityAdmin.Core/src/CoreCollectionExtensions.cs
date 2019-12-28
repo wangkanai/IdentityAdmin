@@ -11,13 +11,17 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminCoreCollectionExtensions
     {
-        public static IIdentityAdminCoreBuilder AddIdentityAdminCore(this IServiceCollection services)
+        public static IIdentityAdminCoreBuilder AddIdentityAdminCore(
+            this IServiceCollection services)
         {
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
+            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+
+            services.AddOptions();
+
             services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
-            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
 
             return new IdentityAdminCoreBuilder(services);
         }
