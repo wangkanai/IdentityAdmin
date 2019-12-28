@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Text;
 using Wangkanai.IdentityAdmin.Builder;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Wangkanai.Responsive.Core.Internal;
+using Wangkanai.IdentityAdmin;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -15,7 +17,8 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
 
             return new IdentityAdminBuilder(services);
         }

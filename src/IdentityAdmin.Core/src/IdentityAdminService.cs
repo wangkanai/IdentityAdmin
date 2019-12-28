@@ -10,5 +10,10 @@ namespace Wangkanai.IdentityAdmin
     public class IdentityAdminService : IIdentityAdminService
     {
         public HttpContext Context { get; }
+
+        public IdentityAdminService(HttpContext context)
+        {
+            Context = context ?? throw new System.ArgumentNullException(nameof(context));
+        }
     }
 }

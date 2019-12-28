@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Version>0.0.100</Version>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
 
     <Authors>Sarin Na Wangkanai</Authors>
     <Description>IdentityServer Administration Management Portal</Description>
@@ -14,9 +16,6 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/Wangkanai/IdentityAdmin.git</RepositoryUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
-
-    <LangVersion>8.0</LangVersion>
-    <Nullable>enable</Nullable>
 
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
 
