@@ -1,5 +1,5 @@
-﻿// Copyright (c) 2018 Sarin Na Wangkanai, All Rights Reserved.
-// The GNU GPLv3. See License.txt in the project root for license information.
+﻿// Copyright (c) 2014-2020 Sarin Na Wangkanai, All Rights Reserved.
+// The Apache v2. See License.txt in the project root for license information.
 
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using Wangkanai.IdentityAdmin;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class IdentityAdminCollectionsExtension
+    public static class IdentityAdminCollectionExtensions
     {
         public static IdentityAdminBuilder AddIdentityAdmin(this IServiceCollection services)
         {
