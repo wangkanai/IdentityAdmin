@@ -2,6 +2,7 @@
 // The Apache v2. See License.txt in the project root for license information.
 
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 using System;
 using Wangkanai.IdentityAdmin;
 using Wangkanai.IdentityAdmin.Builder;
@@ -21,6 +22,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
 
             services.AddOptions();
+            services.AddSingleton(
+                resolver => resolver.GetRequiredService<IOptions<IdentityAdminOptions>>().Value);
 
             services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
 
