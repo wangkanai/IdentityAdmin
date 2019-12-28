@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>0.0.102</Version>
+    <Version>0.0.0</Version>
+    <IsAspNetCoreApp>true</IsAspNetCoreApp>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
 
@@ -14,8 +15,6 @@
     <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
     <NoWarn>NU5048</NoWarn>
 
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
   </PropertyGroup>
 
