@@ -288,3 +288,11 @@ __pycache__/
 *.xsd.cs
 
 global.json
+
+/src/WebApp/wwwroot/css/*.css
+/src/WebApp/wwwroot/lib/
+/src/WebApp/Data/Configuration/ConfigurationDb/
+/src/WebApp/Data/Configuration/PersistedGrantDb/
+/src/WebApp/Data/Users/Migrations/
+/src/WebApp/IdentityServer.db*
+/src/WebApp/AspIdUsers.db*
