@@ -15,7 +15,27 @@ Installation of IdentityAdmin
 PM> install-package Wangkanai.IdentityAdmin
 ```
 
+Implement of the library into your web application is done by configuring the `Startup.cs` by adding the IdentityAdmin service in the `ConfigureServices` method.
 
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllersWithViews();
+
+    services.AddIdentityAdmin();
+}
+```
+
+Adding the IdentityAdmin middleware to the pipeline. The IdentityAdmin middleware is enabled in the `Configure` method of *Startup.cs* file.
+
+```csharp
+public void Configure(IApplicationBuilder app)
+{
+    app.UseIdentityAdmin();
+
+    app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
+}
+```
 
 ### Directory Structure
 * `src` - The code of this project lives here
