@@ -7,7 +7,7 @@ using System;
 using System.Threading.Tasks;
 using Wangkanai.IdentityAdmin.Builder;
 
-namespace Wangkanai.IdentityAdmin
+namespace Wangkanai.IdentityAdmin.Hosting
 {
     public class IdentityAdminMiddleware
     {

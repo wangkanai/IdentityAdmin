@@ -3,7 +3,7 @@
 
 using Microsoft.AspNetCore.Builder;
 using System;
-using Wangkanai.IdentityAdmin;
+using Wangkanai.IdentityAdmin.Hosting;
 using Wangkanai.IdentityAdmin.Internal;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -23,7 +23,8 @@ namespace Microsoft.Extensions.DependencyInjection
             return app;
         }
 
-        private static void VerifyIsRegistered(IApplicationBuilder app)
+        private static void VerifyIsRegistered(
+            IApplicationBuilder app)
         {
             if (app.ApplicationServices.GetService(typeof(IdentityAdminMarkerService)) == null)
                 throw new InvalidOperationException("AddIdentityAdmin() is not added to ConfigureServices(...)");

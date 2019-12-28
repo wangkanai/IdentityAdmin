@@ -14,7 +14,8 @@ namespace Microsoft.Extensions.DependencyInjection
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            services.AddIdentityAdminCore();
+            services.AddIdentityAdminCore()
+                .AddWebApiService();
 
             return new IdentityAdminBuilder(services);
         }

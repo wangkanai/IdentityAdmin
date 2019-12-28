@@ -6,6 +6,7 @@ using System;
 using Wangkanai.IdentityAdmin;
 using Wangkanai.IdentityAdmin.Builder;
 using Wangkanai.IdentityAdmin.Internal;
+using Wangkanai.IdentityAdmin.Services;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -17,7 +18,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
 
             services.AddOptions();
 
