@@ -2,11 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using System;
+using System.Linq;
 
 namespace WebApp
 {
@@ -32,7 +35,23 @@ namespace WebApp
 
             try
             {
+                var seed = args.Contains("/seed");
+                if (seed)
+                {
+                    args = args.Except(new[] { "/seed" }).ToArray();
+                }
+
                 var host = CreateHostBuilder(args).Build();
+
+                if (seed)
+                {
+                    Log.Information("Seeding database...");
+                    var config = host.Services.GetRequiredService<IConfiguration>();
+                    SeedData.EnsureSeedDataConfiguration(config.GetConnectionString("Configuration"));
+                    SeedData.EnsureSeedDataUser(config.GetConnectionString("Users"));
+                    Log.Information("Done seeding database.");
+                    return 0;
+                }
 
                 Log.Information("Starting host...");
                 host.Run();
