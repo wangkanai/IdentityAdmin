@@ -2,7 +2,7 @@
 // The Apache v2. See License.txt in the project root for license information.
 
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 using Wangkanai.IdentityAdmin.Builder;
@@ -13,22 +13,27 @@ namespace Wangkanai.IdentityAdmin.Hosting
     {
         private readonly RequestDelegate _next;
         private readonly IdentityAdminOptions _options;
+        private readonly ILogger<IdentityAdminMiddleware> _logger;
 
-        public IdentityAdminMiddleware(RequestDelegate next, IOptions<IdentityAdminOptions> options)
+        public IdentityAdminMiddleware(RequestDelegate next, IdentityAdminOptions options, ILogger<IdentityAdminMiddleware> logger)
         {
-            if (next == null)
-                throw new ArgumentNullException(nameof(next));
-            if (options == null)
-                throw new ArgumentNullException(nameof(options));
-
-            _next = next;
-            _options = options.Value;
+            _next = next
+                ?? throw new ArgumentNullException(nameof(next));
+            _options = options
+                ?? throw new ArgumentNullException(nameof(options));
+            _logger = logger
+                ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public async Task Invoke(HttpContext context)
         {
             if (context == null)
                 throw new ArgumentNullException(nameof(context));
+
+            if (_options.Demo)
+            {
+                _logger.LogDebug("IdentityAdmin is in Demo mode.");
+            }
 
             await _next(context);
         }
