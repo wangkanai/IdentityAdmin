@@ -13,11 +13,8 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
+    <NoWarn>NU5048;NU5104</NoWarn>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
-
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <NoWarn>NU5048</NoWarn>
 
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
@@ -29,13 +26,15 @@
   <ItemGroup>
     <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>All</IncludeAssets>
     </ProjectReference>
     <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>All</IncludeAssets>
     </ProjectReference>
   </ItemGroup>
 
-  <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
+  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
     <ItemGroup>
       <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
     </ItemGroup>
