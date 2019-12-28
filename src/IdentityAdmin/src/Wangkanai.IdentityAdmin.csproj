@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>0.0.100</Version>
+    <Version>0.0.101</Version>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
 
@@ -11,18 +11,15 @@
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-
+    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
 
-    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
-    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
-
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <DevelopmentDependency>true</DevelopmentDependency>
-    <BuildOutputTargetFolder>build</BuildOutputTargetFolder>
+    <NoWarn>NU5048</NoWarn>
 
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,8 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj" />
-    <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj" />
+    <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
 
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
