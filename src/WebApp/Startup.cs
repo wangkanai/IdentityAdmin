@@ -2,8 +2,6 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityExpress.Identity;
-using IdentityExpress.Manager.Api;
 using IdentityServer4;
 using IdentityServer4.Configuration;
 using WebApp.Data;
@@ -105,8 +103,7 @@ namespace WebApp
                     options.ClientSecret = "copy client secret from Google here";
                 });
 
-            services.UseAdminUI();
-            services.AddScoped<IdentityExpressDbContext, SqliteIdentityDbContext>();
+            services.AddIdentityAdmin();
         }
 
         public void Configure(IApplicationBuilder app)
@@ -128,7 +125,7 @@ namespace WebApp
             app.UseIdentityServer();
             app.UseAuthorization();
 
-            app.UseAdminUI();
+            app.UseIdentityAdmin();
 
             app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
         }

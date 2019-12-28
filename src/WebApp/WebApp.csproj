@@ -22,4 +22,8 @@
 
     <PackageReference Include="Serilog.AspNetCore" Version="3.1.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityAdmin\src\Wangkanai.IdentityAdmin.csproj" />
+  </ItemGroup>
 </Project>

@@ -9,14 +9,13 @@ IdentityAdmin is a free, open source administration portal for managing [Identit
 
 ## Overview
 
-IdentityAdmin consists of multiple modules in multiple repositories.
-
-
 Installation of IdentityAdmin
 
 ```powershell
-PM> install-package Wangkanai.IdentityAdmin -pre
+PM> install-package Wangkanai.IdentityAdmin
 ```
+
+
 
 ### Directory Structure
 * `src` - The code of this project lives here
