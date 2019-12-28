@@ -10,10 +10,12 @@
     <Description>IdentityServer Administration Management Portal Core Module</Description>
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
-
     <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/Wangkanai/IdentityAdmin.git</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
+    <NoWarn>NU5048</NoWarn>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RootNamespace>Wangkanai.IdentityAdmin</RootNamespace>
   </PropertyGroup>
 
