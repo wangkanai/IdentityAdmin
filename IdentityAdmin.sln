@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Api
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.Core", "src\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj", "{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\WebApp\WebApp.csproj", "{C6378836-1DF4-4D09-A40F-CD9D3BCD7BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F9E3527-64CB-4D75-BEEC-5FC90ACEBB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6378836-1DF4-4D09-A40F-CD9D3BCD7BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6378836-1DF4-4D09-A40F-CD9D3BCD7BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6378836-1DF4-4D09-A40F-CD9D3BCD7BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6378836-1DF4-4D09-A40F-CD9D3BCD7BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
