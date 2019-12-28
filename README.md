@@ -22,6 +22,8 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllersWithViews();
 
+    services.AddIdentityServer();
+
     services.AddIdentityAdmin();
 }
 ```
@@ -31,6 +33,8 @@ Adding the IdentityAdmin middleware to the pipeline. The IdentityAdmin middlewar
 ```csharp
 public void Configure(IApplicationBuilder app)
 {
+    app.UseIdentityServer();
+
     app.UseIdentityAdmin();
 
     app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
