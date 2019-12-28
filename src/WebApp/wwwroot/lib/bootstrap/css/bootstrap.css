@@ -5670,12 +5670,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-inverse {
-    background-color: #222;
+    background-color: #777;
     border-color: #080808;
 }
 
     .navbar-inverse .navbar-brand {
-        color: #9d9d9d;
+        color: #fcf8e3;
     }
 
         .navbar-inverse .navbar-brand:hover,

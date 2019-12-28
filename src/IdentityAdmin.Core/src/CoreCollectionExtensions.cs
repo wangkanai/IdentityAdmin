@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using Wangkanai.IdentityAdmin;
 using Wangkanai.IdentityAdmin.Builder;
-using Wangkanai.Responsive.Core.Internal;
+using Wangkanai.IdentityAdmin.Internal;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -17,11 +17,11 @@ namespace Microsoft.Extensions.DependencyInjection
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
 
-            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
 
             services.AddOptions();
 
-            services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
+            services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
 
             return new IdentityAdminCoreBuilder(services);
         }
