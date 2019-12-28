@@ -13,12 +13,26 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminCollectionExtensions
     {
-        public static IdentityAdminBuilder AddIdentityAdmin(this IServiceCollection services)
+        public static IdentityAdminBuilder AddIdentityAdmin(
+            this IServiceCollection services)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services == null)
+                throw new ArgumentNullException(nameof(services));
 
-            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
-            services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
+            services.AddIdentityAdminCore();
+
+            return new IdentityAdminBuilder(services);
+        }
+
+        public static IdentityAdminBuilder AddIdentityAdmin(
+            this IServiceCollection services,
+            Action<IdentityAdminOptions> setAction)
+        {
+            if (services == null)
+                throw new ArgumentNullException(nameof(services));
+
+            services.Configure<IdentityAdminOptions>(setAction);
+            services.AddIdentityAdminCore();
 
             return new IdentityAdminBuilder(services);
         }

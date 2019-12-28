@@ -103,7 +103,10 @@ namespace WebApp
                     options.ClientSecret = "copy client secret from Google here";
                 });
 
-            services.AddIdentityAdmin();
+            services.AddIdentityAdmin(options =>
+            {
+                options.Demo = true;
+            });
         }
 
         public void Configure(IApplicationBuilder app)

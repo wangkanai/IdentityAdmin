@@ -27,9 +27,4 @@ namespace Wangkanai.IdentityAdmin.Builder
                 ?? throw new ArgumentNullException(nameof(services));
         }
     }
-
-    public class IdentityAdminOptions
-    {
-        public bool Demo { get; set; } = false;
-    }
 }
