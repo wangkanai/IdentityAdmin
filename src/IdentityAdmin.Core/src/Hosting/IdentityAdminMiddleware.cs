@@ -14,7 +14,7 @@ namespace Wangkanai.IdentityAdmin.Hosting
         private readonly RequestDelegate _next;
         private readonly IdentityAdminOptions _options;
 
-        public IdentityAdminMiddleware(RequestDelegate next, IOptions<IdentityAdminOptions> options)
+        public IdentityAdminMiddleware(RequestDelegate next, IdentityAdminOptions options)
         {
             if (next == null)
                 throw new ArgumentNullException(nameof(next));
@@ -22,7 +22,7 @@ namespace Wangkanai.IdentityAdmin.Hosting
                 throw new ArgumentNullException(nameof(options));
 
             _next = next;
-            _options = options.Value;
+            _options = options;
         }
 
         public async Task Invoke(HttpContext context)
