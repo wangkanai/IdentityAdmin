@@ -17,7 +17,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
+            //services.TryAddTransient<IIdentityAdminService, IdentityAdminService>();
             services.TryAddSingleton<ResponsiveMarkerService, ResponsiveMarkerService>();
 
             return new IdentityAdminBuilder(services);
