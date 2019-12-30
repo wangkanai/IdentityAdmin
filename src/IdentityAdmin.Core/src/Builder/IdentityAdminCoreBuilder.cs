@@ -6,11 +6,11 @@ using System;
 
 namespace Wangkanai.IdentityAdmin.Builder
 {
-    public class IdentityAdminBuilder : IIdentityAdminBuilder
+    public class IdentityAdminCoreBuilder : IIdentityAdminCoreBuilder
     {
         public IServiceCollection Services { get; private set; }
 
-        public IdentityAdminBuilder(IServiceCollection services)
+        public IdentityAdminCoreBuilder(IServiceCollection services)
         {
             Services = services
                 ?? throw new ArgumentNullException(nameof(services));

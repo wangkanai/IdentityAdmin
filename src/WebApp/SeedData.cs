@@ -47,6 +47,7 @@ namespace WebApp
 
                     var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                     var alice = userMgr.FindByNameAsync("alice").Result;
+
                     if (alice == null)
                     {
                         alice = new ApplicationUser
@@ -55,31 +56,30 @@ namespace WebApp
                             Email = "AliceSmith@email.com",
                             EmailConfirmed = true
                         };
+
                         var result = userMgr.CreateAsync(alice, "alice").Result;
                         if (!result.Succeeded)
-                        {
                             throw new Exception(result.Errors.First().Description);
-                        }
 
                         result = userMgr.AddClaimsAsync(alice, new Claim[]{
-                        new Claim(JwtClaimTypes.Name, "Alice Smith"),
-                        new Claim(JwtClaimTypes.GivenName, "Alice"),
-                        new Claim(JwtClaimTypes.FamilyName, "Smith"),
-                        new Claim(JwtClaimTypes.Email, "AliceSmith@email.com"),
-                        new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
-                        new Claim(JwtClaimTypes.WebSite, "http://alice.com"),
-                        new Claim(JwtClaimTypes.Address, @"{ 'street_address': 'One Hacker Way', 'locality': 'Heidelberg', 'postal_code': 69118, 'country': 'Germany' }", IdentityServer4.IdentityServerConstants.ClaimValueTypes.Json)
-                    }).Result;
+                            new Claim(JwtClaimTypes.Name, "Alice Smith"),
+                            new Claim(JwtClaimTypes.GivenName, "Alice"),
+                            new Claim(JwtClaimTypes.FamilyName, "Smith"),
+                            new Claim(JwtClaimTypes.Email, "AliceSmith@email.com"),
+                            new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
+                            new Claim(JwtClaimTypes.WebSite, "http://alice.com"),
+                            new Claim(JwtClaimTypes.Address, @"{ 'street_address': 'One Hacker Way', 'locality': 'Heidelberg', 'postal_code': 69118, 'country': 'Germany' }",
+                                IdentityServer4.IdentityServerConstants.ClaimValueTypes.Json)
+                        }).Result;
+
                         if (!result.Succeeded)
-                        {
                             throw new Exception(result.Errors.First().Description);
-                        }
+
                         Log.Debug("alice created");
                     }
                     else
-                    {
                         Log.Debug("alice already exists");
-                    }
+
                 }
             }
         }
@@ -89,11 +89,15 @@ namespace WebApp
             var services = new ServiceCollection();
             services.AddOperationalDbContext(options =>
             {
-                options.ConfigureDbContext = db => db.UseSqlite(connectionString, sql => sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
+                options.ConfigureDbContext = db =>
+                    db.UseSqlite(connectionString, sql =>
+                        sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
             });
             services.AddConfigurationDbContext(options =>
             {
-                options.ConfigureDbContext = db => db.UseSqlite(connectionString, sql => sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
+                options.ConfigureDbContext = db =>
+                    db.UseSqlite(connectionString, sql =>
+                        sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
             });
 
             var serviceProvider = services.BuildServiceProvider();
@@ -114,15 +118,13 @@ namespace WebApp
             {
                 Log.Debug("Clients being populated");
                 foreach (var client in Config.Clients.ToList())
-                {
                     context.Clients.Add(client.ToEntity());
-                }
+
                 context.SaveChanges();
             }
             else
-            {
                 Log.Debug("Clients already populated");
-            }
+
 
             if (!context.IdentityResources.Any())
             {
@@ -134,9 +136,8 @@ namespace WebApp
                 context.SaveChanges();
             }
             else
-            {
                 Log.Debug("IdentityResources already populated");
-            }
+
 
             if (!context.ApiResources.Any())
             {
@@ -148,9 +149,8 @@ namespace WebApp
                 context.SaveChanges();
             }
             else
-            {
                 Log.Debug("ApiResources already populated");
-            }
+
         }
     }
 }
