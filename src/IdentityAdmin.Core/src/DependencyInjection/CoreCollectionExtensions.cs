@@ -11,7 +11,7 @@ using Wangkanai.IdentityAdmin.Services;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class IdentityAdminCoreCollectionExtensions
+    public static class CoreCollectionExtensions
     {
         public static IIdentityAdminCoreBuilder AddIdentityAdminCore(
             this IServiceCollection services)
