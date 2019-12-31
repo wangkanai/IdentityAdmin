@@ -8,7 +8,7 @@ using Wangkanai.IdentityAdmin.Internal;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class IdentityAdminApplicationBuilderExtensions
+    public static class ApplicationBuilderExtensions
     {
         public static IApplicationBuilder UseIdentityAdmin(
             this IApplicationBuilder app)

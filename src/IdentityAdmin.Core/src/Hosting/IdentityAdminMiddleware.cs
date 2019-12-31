@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
-using Wangkanai.IdentityAdmin.Builder;
+using Wangkanai.IdentityAdmin.Configuration;
 
 namespace Wangkanai.IdentityAdmin.Hosting
 {
