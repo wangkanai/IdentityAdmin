@@ -3,11 +3,11 @@
 
 using Microsoft.Extensions.Configuration;
 using System;
-using Wangkanai.IdentityAdmin.Builder;
+using Wangkanai.IdentityAdmin.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class IdentityAdminCollectionExtensions
+    public static class IdentityAdminServiceCollectionExtensions
     {
         public static IdentityAdminBuilder AddIdentityAdmin(
             this IServiceCollection services)
