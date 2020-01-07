@@ -289,10 +289,10 @@ __pycache__/
 
 global.json
 
-/src/WebApp/wwwroot/css/*.css
-/src/WebApp/wwwroot/lib/
-/src/WebApp/Data/Configuration/ConfigurationDb/
-/src/WebApp/Data/Configuration/PersistedGrantDb/
-/src/WebApp/Data/Users/Migrations/
-/src/WebApp/IdentityServer.db*
-/src/WebApp/AspIdUsers.db*
+/sample/WebApp/wwwroot/css/*.css
+/sample/WebApp/wwwroot/lib/
+/sample/WebApp/Data/Configuration/ConfigurationDb/
+/sample/WebApp/Data/Configuration/PersistedGrantDb/
+/sample/WebApp/Data/Users/Migrations/
+/sample/WebApp/IdentityServer.db*
+/sample/WebApp/AspIdUsers.db*
