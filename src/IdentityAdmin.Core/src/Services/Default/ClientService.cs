@@ -3,5 +3,5 @@
 
 namespace Wangkanai.IdentityAdmin.Services
 {
-    public class UserService : IUserService { }
+    public class ClientService : IClientService { }
 }
