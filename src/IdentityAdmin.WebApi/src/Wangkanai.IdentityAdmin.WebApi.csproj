@@ -6,6 +6,7 @@
     <IsAspNetCoreApp>true</IsAspNetCoreApp>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
+    <IsShippingPackage>true</IsShippingPackage>
 
     <Authors>Sarin Na Wangkanai</Authors>
     <Description>IdentityServer Administration Management Portal Web Api Module</Description>
