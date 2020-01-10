@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj"  PrivateAssets="all" />
-    <ProjectReference Include="..\..\IdentityAdmin.UI\src\Wangkanai.IdentityAdmin.UI.csproj"  PrivateAssets="all" />
-    <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj"  PrivateAssets="all"/>
+    <ProjectReference Include="..\..\IdentityAdmin.Core\src\Wangkanai.IdentityAdmin.Core.csproj"  PrivateAssets="All" />
+    <ProjectReference Include="..\..\IdentityAdmin.UI\src\Wangkanai.IdentityAdmin.UI.csproj"  PrivateAssets="All" />
+    <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj"  PrivateAssets="All"/>
   </ItemGroup>
 
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
