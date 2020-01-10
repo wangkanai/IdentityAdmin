@@ -6,6 +6,7 @@
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
     <IsShippingPackage>true</IsShippingPackage>
+    <IsPackable>true</IsPackable>
 
     <Authors>Sarin Na Wangkanai</Authors>
     <Description>IdentityServer Administration Management Portal Core Module</Description>
