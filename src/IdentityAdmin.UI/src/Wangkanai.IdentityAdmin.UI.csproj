@@ -8,7 +8,7 @@
     <IsShippingPackage>true</IsShippingPackage>
     <IsAspNetCoreApp>true</IsAspNetCoreApp>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
