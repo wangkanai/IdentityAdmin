@@ -22,9 +22,10 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllersWithViews();
 
-    services.AddIdentityServer();
+    services.AddIdentityServer()
+        .AddAspNetIdentity<ApplicationUser>();
 
-    services.AddIdentityAdmin();
+    services.AddIdentityAdmin<ApplicationUser>();
 }
 ```
 

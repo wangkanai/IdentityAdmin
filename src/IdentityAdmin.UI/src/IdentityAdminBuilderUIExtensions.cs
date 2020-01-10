@@ -14,8 +14,8 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IIdentityAdminCoreBuilder AddDefaultUI(this IIdentityAdminCoreBuilder builder)
         {
             builder.Services.ConfigureOptions(
-                typeof(IdentityAdminDefaultUIConfigureOptions<>));
-                    //.MakeGenericType(builder.UserType));
+                typeof(IdentityAdminDefaultUIConfigureOptions<>)
+                    .MakeGenericType(builder.UserType));
 
             return builder;
         }
