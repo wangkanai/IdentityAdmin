@@ -110,10 +110,10 @@ namespace WebApp
                     options.ClientSecret = "copy client secret from Google here";
                 });
 
-            services.AddIdentityAdmin(options =>
-            {
-                options.Demo = true;
-            });
+            services.AddIdentityAdmin<ApplicationUser>();// options =>
+            //{
+            //    options.Demo = true;
+            //});
         }
 
         public void Configure(IApplicationBuilder app)
@@ -135,7 +135,7 @@ namespace WebApp
             app.UseIdentityServer();
             app.UseAuthorization();
 
-            app.UseIdentityAdmin();
+            //app.UseIdentityAdmin();
 
             app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
         }

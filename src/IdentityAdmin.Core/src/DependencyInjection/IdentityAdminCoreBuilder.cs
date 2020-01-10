@@ -9,10 +9,18 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public IServiceCollection Services { get; private set; }
 
-        public IdentityAdminCoreBuilder(IServiceCollection services)
+        public Type UserType { get; private set; }
+
+        public Type RoleType { get; private set; }
+
+        public IdentityAdminCoreBuilder(Type user, IServiceCollection services)
         {
-            Services = services
-                ?? throw new ArgumentNullException(nameof(services));
+            UserType = user;
+            Services = services;
         }
+
+        public IdentityAdminCoreBuilder(Type user, Type role, IServiceCollection services)
+            : this(user, services) => RoleType = role;
+
     }
 }

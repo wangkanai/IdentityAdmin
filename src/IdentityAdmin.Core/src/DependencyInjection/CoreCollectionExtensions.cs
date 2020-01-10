@@ -13,7 +13,7 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class CoreCollectionExtensions
     {
-        public static IIdentityAdminCoreBuilder AddIdentityAdminCore(
+        public static IIdentityAdminCoreBuilder AddIdentityAdminCore<TUser>(
             this IServiceCollection services)
         {
             if (services == null)
@@ -27,7 +27,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
 
-            return new IdentityAdminCoreBuilder(services);
+            return new IdentityAdminCoreBuilder(typeof(TUser), services);
         }
     }
 }
