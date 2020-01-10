@@ -1,6 +1,6 @@
 # About IdentityAdmin
 
-[![Build status](https://ci.appveyor.com/api/projects/status/1cnnn2s61yqsoyup?svg=true)](https://ci.appveyor.com/project/wangkanai/IdentityAdmin) 
+[![Build status](https://ci.appveyor.com/api/projects/status/m4sukyo2hyjadg1u?svg=true&retina=true)](https://ci.appveyor.com/project/wangkanai/identityadmin)
 [![NuGet Badge](https://buildstats.info/nuget/wangkanai.IdentityAdmin)](https://www.nuget.org/packages/wangkanai.IdentityAdmin)
 [![NuGet Badge](https://buildstats.info/nuget/wangkanai.IdentityAdmin?includePreReleases=true)](https://www.nuget.org/packages/wangkanai.IdentityAdmin)
 [![MyGet Badge](https://buildstats.info/myget/wangkanai/Wangkanai.IdentityAdmin)](https://www.myget.org/feed/wangkanai/package/nuget/Wangkanai.IdentityAdmin)
