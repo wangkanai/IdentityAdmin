@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using System.Text;
 using Wangkanai.IdentityAdmin.UI;
 
-namespace Wangkanai.IdentityAdmin
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminBuilderUIExtensions
     {
-        public static IdentityAdminBuilder AddDefaultUI(this IdentityAdminBuilder builder)
+        public static IIdentityAdminCoreBuilder AddDefaultUI(this IIdentityAdminCoreBuilder builder)
         {
-            builder.Services.ConfigureOptions(typeof(IdentityAdminDefaultUIConfigureOptions))
+            builder.Services.ConfigureOptions(
+                typeof(IdentityAdminDefaultUIConfigureOptions<>));
+                    //.MakeGenericType(builder.UserType));
 
             return builder;
         }
