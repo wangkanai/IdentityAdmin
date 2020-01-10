@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "sample\WebApp\WebApp.csproj", "{5E4A537C-E6F7-4C9F-86F5-BE540846A61D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.IdentityAdmin.UI", "src\IdentityAdmin.UI\src\Wangkanai.IdentityAdmin.UI.csproj", "{41F4089C-00D3-46D4-95D5-A51CE03D7F2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5E4A537C-E6F7-4C9F-86F5-BE540846A61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E4A537C-E6F7-4C9F-86F5-BE540846A61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E4A537C-E6F7-4C9F-86F5-BE540846A61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F4089C-00D3-46D4-95D5-A51CE03D7F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F4089C-00D3-46D4-95D5-A51CE03D7F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F4089C-00D3-46D4-95D5-A51CE03D7F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F4089C-00D3-46D4-95D5-A51CE03D7F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
