@@ -28,6 +28,7 @@
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <IncludeAssets>All</IncludeAssets>
     </ProjectReference>
+    <ProjectReference Include="..\..\IdentityAdmin.UI\src\Wangkanai.IdentityAdmin.UI.csproj" />
     <ProjectReference Include="..\..\IdentityAdmin.WebApi\src\Wangkanai.IdentityAdmin.WebApi.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <IncludeAssets>All</IncludeAssets>
