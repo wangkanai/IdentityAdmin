@@ -13,20 +13,19 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class CoreCollectionExtensions
     {
-        public static IIdentityAdminCoreBuilder AddIdentityAdminCore<TUser>(
-            this IServiceCollection services)
+        public static IIdentityAdminCoreBuilder AddIdentityAdminCore<TUser>(this IServiceCollection services)
         {
             if (services == null)
                 throw new ArgumentNullException(nameof(services));
-
+        
             services.TryAddSingleton<IdentityAdminService, IdentityAdminService>();
-
+        
             services.AddOptions();
             services.AddSingleton(
                 resolver => resolver.GetRequiredService<IOptions<IdentityAdminOptions>>().Value);
-
+        
             services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
-
+        
             return new IdentityAdminCoreBuilder(typeof(TUser), services);
         }
     }

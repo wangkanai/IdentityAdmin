@@ -10,8 +10,7 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ApplicationBuilderExtensions
     {
-        public static IApplicationBuilder UseIdentityAdmin(
-            this IApplicationBuilder app)
+        public static IApplicationBuilder UseIdentityAdmin(this IApplicationBuilder app)
         {
             if (app == null)
                 throw new ArgumentNullException(nameof(app));
@@ -23,8 +22,7 @@ namespace Microsoft.Extensions.DependencyInjection
             return app;
         }
 
-        private static void VerifyIsRegistered(
-            IApplicationBuilder app)
+        private static void VerifyIsRegistered(IApplicationBuilder app)
         {
             if (app.ApplicationServices.GetService(typeof(IdentityAdminMarkerService)) == null)
                 throw new InvalidOperationException("AddIdentityAdmin() is not added to ConfigureServices(...)");
