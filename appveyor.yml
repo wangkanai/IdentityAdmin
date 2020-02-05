@@ -35,7 +35,7 @@ artifacts:
   - path: '**\*.nupkg'
 deploy:
 - provider: NuGet
-  server: https://www.myget.org/F/wangkanai/api/v3/package
+  server: https://www.myget.org/F/wangkanai/api/v2/package
   api_key:
     secure: YY8jIrOCrsuVBg/iqwS2jVwZ462EWKFMZ+95fBEDqM1DiH0H2w7OMgUx3rQ3XTzl
   artifact: /.*\.nupkg/
