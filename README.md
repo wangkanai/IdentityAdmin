@@ -1,5 +1,7 @@
 # About IdentityAdmin
 
+IdentityAdmin is a free, open source administration portal for managing [IdentityServer](https://github.com/IdentityServer/). IdentityAdmin will allow easier implementation of IdentityServer.
+
 [![Build status](https://ci.appveyor.com/api/projects/status/m4sukyo2hyjadg1u?svg=true&retina=true)](https://ci.appveyor.com/project/wangkanai/identityadmin)
 [![GitHub](https://img.shields.io/github/license/wangkanai/IdentityAdmin)](https://github.com/wangkanai/IdentityAdmin/blob/dev/LICENSE)
 [![Open Collective](https://img.shields.io/badge/open%20collective-support%20me-3385FF.svg)](https://opencollective.com/wangkanai)
@@ -10,9 +12,6 @@
 [![MyGet Badge](https://buildstats.info/myget/wangkanai/Wangkanai.IdentityAdmin)](https://www.myget.org/feed/wangkanai/package/nuget/Wangkanai.IdentityAdmin)
  
 [![Build history](https://buildstats.info/appveyor/chart/wangkanai/IdentityAdmin)](https://ci.appveyor.com/project/wangkanai/detection/history)
-
-
-IdentityAdmin is a free, open source administration portal for managing [IdentityServer](https://github.com/IdentityServer/). Founded and maintained by Sarin Na Wangkanai, IdentityAdmin will allow easier implementation of IdentityServer.
 
 ## Overview
 
