@@ -3,5 +3,5 @@
 
 namespace Wangkanai.IdentityAdmin.Services
 {
-    public class IdentityResource : IIdentityResourceService { }
+    public class IdentityResourceService : IIdentityResourceService { }
 }
