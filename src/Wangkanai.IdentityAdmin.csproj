@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Version>0.0.100</Version>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <Authors>Sarin Na Wangkanai</Authors>
+    <Description>IdentityServer Administration Management Portal</Description>
+    <PackageTags>aspnetcore;identityserver;admin</PackageTags>
+    <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
+    <NoWarn>NU5048;NU5104</NoWarn>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha06" />
+  </ItemGroup>
+
+</Project>
