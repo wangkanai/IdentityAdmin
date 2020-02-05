@@ -20,11 +20,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha06"/>
+        <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha06" />
     </ItemGroup>
 
 </Project>
