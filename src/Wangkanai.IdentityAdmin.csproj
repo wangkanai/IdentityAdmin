@@ -7,7 +7,7 @@
         <Nullable>enable</Nullable>
 
         <Authors>Sarin Na Wangkanai</Authors>
-        <Description>IdentityServer Administration Management Portal.</Description>
+        <Description>IdentityAdmin is a free, open source that provides the necessary administration portal for managing IdentityServer to manage clients and users. IdentityAdmin will allow easier implementation of IdentityServer whom provides no administration tool for managing its configuration.</Description>
         <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
         <PackageTags>aspnetcore;identityserver;admin</PackageTags>
         <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
