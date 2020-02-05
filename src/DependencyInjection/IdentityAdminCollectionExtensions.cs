@@ -14,7 +14,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         public static IIdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services)
             => services.AddIdentityAdminBuilder(typeof(TUser))
-                       .AddCoreServices();
+                       .AddCoreServices()
+                       .AddWebApiServices();
 
         internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user)
             => new IdentityAdminBuilder(user, services);
