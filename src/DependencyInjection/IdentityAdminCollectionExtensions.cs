@@ -9,22 +9,14 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminCollectionExtensions
     {
-        public static IdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services, Action<IdentityAdminOptions> setAction)
-        {
-            services.Configure(setAction);
+        public static IdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services, Action<IdentityAdminOptions> setAction) 
+            => services.Configure(setAction)
+                .AddIdentityAdmin<TUser>();
 
-            return services.AddIdentityAdmin<TUser>();
-        }
-        
-        public static IdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services)
-        {
-            if (services == null)
-                throw new ArgumentNullException(nameof(services));
+        public static IdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services) 
+            => services.AddIdentityAdminBuilder(typeof(TUser));
 
-            services.AddIdentityAdminCore<TUser>()
-                    .AddWebApiService();
-
-            return new IdentityAdminBuilder(services);
-        }
+        public static IdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user)
+            => new IdentityAdminBuilder(user, services);
     }
 }
