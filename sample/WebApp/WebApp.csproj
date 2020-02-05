@@ -26,6 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\IdentityAdmin\src\Wangkanai.IdentityAdmin.csproj" />
+    <ProjectReference Include="..\..\src\Wangkanai.IdentityAdmin.csproj" />
   </ItemGroup>
+
+
 </Project>
