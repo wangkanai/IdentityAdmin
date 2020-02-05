@@ -1,28 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>0.0.100</Version>
-    <LangVersion>8.0</LangVersion>
-    <Nullable>enable</Nullable>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <Version>0.0.100</Version>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>enable</Nullable>
 
-    <Authors>Sarin Na Wangkanai</Authors>
-    <Description>IdentityServer Administration Management Portal</Description>
-    <PackageTags>aspnetcore;identityserver;admin</PackageTags>
-    <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
-    <NoWarn>NU5048;NU5104</NoWarn>
-    
-  </PropertyGroup>
+        <Authors>Sarin Na Wangkanai</Authors>
+        <Description>IdentityServer Administration Management Portal.</Description>
+        <Copyright>Copyright © 2016 Sarin Na Wangkanai</Copyright>
+        <PackageTags>aspnetcore;identityserver;admin</PackageTags>
+        <PackageProjectUrl>https://github.com/Wangkanai/IdentityAdmin</PackageProjectUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>git://github.com/wangkanai/IdentityAdmin</RepositoryUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-small.png</PackageIconUrl>
+        <NoWarn>NU5048;NU5104</NoWarn>
 
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha06" />
-  </ItemGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha06"/>
+    </ItemGroup>
 
 </Project>
