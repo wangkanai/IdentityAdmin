@@ -13,4 +13,8 @@
         <PackageReference Include="coverlet.collector" Version="1.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="obj\Debug\netcoreapp3.0" />
+    </ItemGroup>
+
 </Project>
