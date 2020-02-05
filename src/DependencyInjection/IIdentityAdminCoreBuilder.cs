@@ -5,10 +5,10 @@ using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public interface IIdentityAdminCoreBuilder
-    {
-        IServiceCollection Services { get; }
-        Type UserType { get; }
-        Type RoleType { get; }
-    }
+    // public interface IIdentityAdminCoreBuilder
+    // {
+    //     IServiceCollection Services { get; }
+    //     Type UserType { get; }
+    //     Type RoleType { get; }
+    // }
 }

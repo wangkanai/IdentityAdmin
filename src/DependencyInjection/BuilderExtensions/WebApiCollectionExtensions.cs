@@ -7,13 +7,13 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminApiCollectionExtensions
     {
-        public static IIdentityAdminCoreBuilder AddWebApiService(
-            this IIdentityAdminCoreBuilder builder)
-        {
-            if (builder is null)
-                throw new System.ArgumentNullException(nameof(builder));
-
-            return builder;
-        }
+        // public static IIdentityAdminCoreBuilder AddWebApiService(
+        //     this IIdentityAdminCoreBuilder builder)
+        // {
+        //     if (builder is null)
+        //         throw new System.ArgumentNullException(nameof(builder));
+        //
+        //     return builder;
+        // }
     }
 }

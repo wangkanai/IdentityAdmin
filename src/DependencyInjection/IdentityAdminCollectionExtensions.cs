@@ -7,7 +7,7 @@ using Wangkanai.IdentityAdmin.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class IdentityAdminServiceCollectionExtensions
+    public static class IdentityAdminCollectionExtensions
     {
         public static IdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services, Action<IdentityAdminOptions> setAction)
         {
