@@ -110,7 +110,7 @@ namespace WebApp
                     options.ClientSecret = "copy client secret from Google here";
                 });
 
-            services.AddIdentityAdmin<ApplicationUser>();// options =>
+            services.AddIdentityAdmin<ApplicationUser, IdentityRole>();// options =>
             //{
             //    options.Demo = true;
             //});

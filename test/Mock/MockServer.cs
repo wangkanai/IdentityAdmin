@@ -11,21 +11,21 @@ namespace Wangkanai.IdentityAdmin
 {
     internal static class MockServer
     {
-        public static TestServer CreateServer<TUser>()
-            => CreateServer(CreateWebHostBuilder<TUser>());
+        public static TestServer CreateServer<TUser, TRole>()
+            => CreateServer(CreateWebHostBuilder<TUser, TRole>());
         
-        public static TestServer CreateServer<TUser>(Action<IdentityAdminOptions> options)
-            => CreateServer(CreateWebHostBuilder<TUser>(options));
+        public static TestServer CreateServer<TUser, TRole>(Action<IdentityAdminOptions> options)
+            => CreateServer(CreateWebHostBuilder<TUser, TRole>(options));
         
         public static TestServer CreateServer(IWebHostBuilder builder)
             => new TestServer(builder);
 
-        public static IWebHostBuilder CreateWebHostBuilder<TUser>()
-            => CreateWebHostBuilder<TUser>(options => { });
+        public static IWebHostBuilder CreateWebHostBuilder<TUser, TRole>()
+            => CreateWebHostBuilder<TUser, TRole>(options => { });
         
-        public static IWebHostBuilder CreateWebHostBuilder<TUser>(Action<IdentityAdminOptions> options)
+        public static IWebHostBuilder CreateWebHostBuilder<TUser, TRole>(Action<IdentityAdminOptions> options)
             => new WebHostBuilder()
-               .ConfigureServices(services => services.AddIdentityAdmin<TUser>(options))
+               .ConfigureServices(services => services.AddIdentityAdmin<TUser, TRole>(options))
                .Configure(app =>
                {
                    app.UseIdentityAdmin();
