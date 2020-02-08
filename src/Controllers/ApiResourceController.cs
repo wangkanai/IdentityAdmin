@@ -9,6 +9,8 @@ namespace Wangkanai.IdentityAdmin.Controllers
 {
     [Authorize(Roles = "Administrator")]
     [Route("api/[controller]")]
+    [Area("Admin")]
+    [ApiController]
     public class ApiResourceController : Controller
     {
         // GET: api/<controller>

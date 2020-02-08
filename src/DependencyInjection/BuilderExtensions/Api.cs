@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class IdentityAdminApiCollectionExtensions
     {
-        public static IIdentityAdminBuilder AddWebApiServices(this IIdentityAdminBuilder builder)
+        public static IIdentityAdminBuilder AddApiServices(this IIdentityAdminBuilder builder)
         {
             if (builder is null)
                 throw new System.ArgumentNullException(nameof(builder));

@@ -20,12 +20,12 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IIdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services)
             => services.AddIdentityAdminBuilder((typeof(TUser)))
                        .AddCoreServices()
-                       .AddWebApiServices();
+                       .AddApiServices();
 
         public static IIdentityAdminBuilder AddIdentityAdmin<TUser, TRole>(this IServiceCollection services)
             => services.AddIdentityAdminBuilder(typeof(TUser), typeof(TRole))
                        .AddCoreServices()
-                       .AddWebApiServices();
+                       .AddApiServices();
 
         internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user)
             => AddIdentityAdminBuilder(services, user, null);
