@@ -13,17 +13,28 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class CoreCollectionExtensions
     {
-        public static IIdentityAdminBuilder AddCoreServices(this IIdentityAdminBuilder builder)
+        public static IIdentityAdminBuilder AddRequiredPlatformServices(this IIdentityAdminBuilder builder)
         {
-            if (builder == null)
-                throw new ArgumentNullException(nameof(builder));
-        
-            builder.Services.TryAddSingleton<IdentityAdminService, IdentityAdminService>();
-        
+            // Hosting doesn't add IHttpContextAccessor by default
+            builder.Services.AddHttpContextAccessor();
+
+            // Add IdentityAdmin Options
             builder.Services.AddOptions();
             builder.Services.AddSingleton(
                 resolver => resolver.GetRequiredService<IOptions<IdentityAdminOptions>>().Value);
-        
+            
+            return builder;
+        }
+
+        public static IIdentityAdminBuilder AddCoreServices(this IIdentityAdminBuilder builder)
+        {
+            builder.Services.TryAddSingleton<IdentityAdminService, IdentityAdminService>();
+            
+            return builder;
+        }
+
+        public static IIdentityAdminBuilder AddMarkerService(this IIdentityAdminBuilder builder)
+        {
             builder.Services.TryAddSingleton<IdentityAdminMarkerService, IdentityAdminMarkerService>();
 
             return builder;

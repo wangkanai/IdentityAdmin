@@ -30,9 +30,9 @@ namespace Microsoft.Extensions.DependencyInjection
             RoleType = role ?? throw new ArgumentNullException(nameof(role));
         }
 
-        public Type UserType { get; }
+        public Type? UserType { get; }
 
-        public Type RoleType { get; }
+        public Type? RoleType { get; }
 
         /// <summary>
         /// Gets the <see cref="IServiceCollection" /> services are attached to.

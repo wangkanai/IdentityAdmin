@@ -9,8 +9,8 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         IServiceCollection Services { get; }
 
-        Type UserType { get; }
+        Type? UserType { get; }
 
-        Type RoleType { get; }
+        Type? RoleType { get; }
     }
 }

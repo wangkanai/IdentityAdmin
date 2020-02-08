@@ -18,14 +18,18 @@ namespace Microsoft.Extensions.DependencyInjection
                        .AddIdentityAdmin<TUser, TRole>();
 
         public static IIdentityAdminBuilder AddIdentityAdmin<TUser>(this IServiceCollection services)
-            => services.AddIdentityAdminBuilder((typeof(TUser)))
-                       .AddCoreServices()
-                       .AddApiServices();
+            => services.AddIdentityAdminBuilder(typeof(TUser))
+                       .AddCommonServices();
 
         public static IIdentityAdminBuilder AddIdentityAdmin<TUser, TRole>(this IServiceCollection services)
             => services.AddIdentityAdminBuilder(typeof(TUser), typeof(TRole))
-                       .AddCoreServices()
-                       .AddApiServices();
+                       .AddCommonServices();
+
+        private static IIdentityAdminBuilder AddCommonServices(this IIdentityAdminBuilder builder)
+            => builder.AddRequiredPlatformServices()
+                      .AddCoreServices()
+                      .AddApiServices()
+                      .AddMarkerService();
 
         internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user)
             => AddIdentityAdminBuilder(services, user, null);
