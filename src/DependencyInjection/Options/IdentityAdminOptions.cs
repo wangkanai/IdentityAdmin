@@ -6,7 +6,5 @@ namespace Wangkanai.IdentityAdmin.Configuration
     public class IdentityAdminOptions
     {
         public bool Demo { get; set; } = false;
-
-        public IdentityAdminOptions() { }
     }
 }
