@@ -11,30 +11,28 @@ namespace Wangkanai.IdentityAdmin
 {
     internal static class MockServer
     {
-        public static TestServer CreateServer<TUser, TRole>()
-            => CreateServer(CreateWebHostBuilder<TUser, TRole>());
+        public static TestServer Server<TUser, TRole>()
+            => Server(WebHostBuilder<TUser, TRole>());
         
-        public static TestServer CreateServer<TUser, TRole>(Action<IdentityAdminOptions> options)
-            => CreateServer(CreateWebHostBuilder<TUser, TRole>(options));
-        
-        public static TestServer CreateServer(IWebHostBuilder builder)
+        public static TestServer Server<TUser, TRole>(Action<IdentityAdminOptions> options)
+            => Server(WebHostBuilder<TUser, TRole>(options));
+
+        private static TestServer Server(IWebHostBuilder builder)
             => new TestServer(builder);
 
-        public static IWebHostBuilder CreateWebHostBuilder<TUser, TRole>()
-            => CreateWebHostBuilder<TUser, TRole>(options => { });
+        public static IWebHostBuilder WebHostBuilder<TUser, TRole>()
+            => WebHostBuilder<TUser, TRole>(options => { });
         
-        public static IWebHostBuilder CreateWebHostBuilder<TUser, TRole>(Action<IdentityAdminOptions> options)
+        public static IWebHostBuilder WebHostBuilder<TUser, TRole>(Action<IdentityAdminOptions> options)
             => new WebHostBuilder()
                .ConfigureServices(services => services.AddIdentityAdmin<TUser, TRole>(options))
                .Configure(app =>
                {
                    app.UseIdentityAdmin();
-                   app.Run(IdentityAdminContextHandler());
+                   app.Run(ContextHandler());
                });
 
-        private static RequestDelegate IdentityAdminContextHandler()
-        {
-            return context => context.Response.WriteAsync("IdentityAdmin");
-        }
+        private static RequestDelegate ContextHandler() 
+            => context => context.Response.WriteAsync("IdentityAdmin");
     }
 }
