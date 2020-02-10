@@ -49,8 +49,10 @@ public void Configure(IApplicationBuilder app)
 ```
 
 ### Directory Structure
-* `src` - The code of this project lives here
-* `test` - Unit tests of this project to valid that everything pass specs
+
+* `src` - The source code of this project lives here.
+* `test` - The unit tests code of this project to valid that everything pass specs.
+* `sample` - The sample code of this project lives here. 
 
 ### Contributing
 
