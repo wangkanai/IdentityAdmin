@@ -1,5 +1,7 @@
 # <img src="https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-logo.svg?sanitize=true" width="650" alt="IdentityAdmin" />
 
+***(Alpha Development)***
+
 IdentityAdmin is a free, open source that provides the necessary administration portal for managing [IdentityServer](https://github.com/IdentityServer/) to manage clients and users. IdentityAdmin will allow easier implementation of IdentityServer whom provides no administration tool for managing its configuration.
 
 **Please give some love by clicking on the star!** :star::star::star: This help movtivate me to continue on developing the project.
