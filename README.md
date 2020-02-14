@@ -4,7 +4,7 @@
 
 IdentityAdmin is a free, open source that provides the necessary administration portal for managing [IdentityServer](https://github.com/IdentityServer/) to manage clients and users. IdentityAdmin will allow easier implementation of IdentityServer whom provides no administration tool for managing its configuration.
 
-**Please give some love by clicking on the star!** :star::star::star: This help movtivate me to continue on developing the project.
+**Please show some me love and click on** :star: This help movtivate me to continue on developing the project.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/m4sukyo2hyjadg1u?svg=true&retina=true)](https://ci.appveyor.com/project/wangkanai/identityadmin)
 [![GitHub](https://img.shields.io/github/license/wangkanai/IdentityAdmin)](https://github.com/wangkanai/IdentityAdmin/blob/dev/LICENSE)
