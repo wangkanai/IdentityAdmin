@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha07" />
+        <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha08" />
     </ItemGroup>
 
 </Project>
