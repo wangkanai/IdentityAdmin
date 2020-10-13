@@ -33,7 +33,7 @@ namespace Microsoft.Extensions.DependencyInjection
         internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user)
             => AddIdentityAdminBuilder(services, user, null);
 
-        internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user, Type role)
+        internal static IIdentityAdminBuilder AddIdentityAdminBuilder(this IServiceCollection services, Type user, Type? role)
             => new IdentityAdminBuilder(user, role, services);
     }
 }
