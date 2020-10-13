@@ -23,6 +23,7 @@
     <PackageTags>aspnetcore;identityserver;admin</PackageTags>
     <PackageProjectUrl>https://github.com/wangkanai/identityadmin</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/identityadmin/main/asset/Identity-admin-small.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/wangkanai/identityadmin/blob/main/LICENSE</PackageLicenseUrl>
 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/wangkanai/identityadmin</RepositoryUrl>
