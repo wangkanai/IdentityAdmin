@@ -1,4 +1,4 @@
-version: 0.0.106-build{build}
+version: 0.0-build{build}
 image:
   - Visual Studio 2019
 init:
@@ -16,21 +16,22 @@ pull_requests:
   do_not_increment_build_number: true
 branches:
   only:
-    - master
-    - dev
+    - main    
+    - /^feature\/.$/
     - /^release\/.$/
     - /^(.*\/)?ci-.*$/
-nuget:
-  account_feed: true
-  project_feed: true
-before_build:
-  - cmd: nuget restore -Verbosity quiet
-build:
-  verbosity: minimal
-build_script:
-  - ps: ./run.ps1
 clone_depth: 1
-test: 'off'
+before_build:
+  - ps: |
+      dotnet --version
+      dotnet restore
+build_script:
+  - ps: |
+      dotnet build -c Release
+      dotnet pack -c Release -o .\artifacts
+test_script:
+  - ps: |
+      dotnet test        
 artifacts:
   - path: '**\*.nupkg'
 deploy:
@@ -40,12 +41,4 @@ deploy:
     secure: YY8jIrOCrsuVBg/iqwS2jVwZ462EWKFMZ+95fBEDqM1DiH0H2w7OMgUx3rQ3XTzl
   artifact: /.*\.nupkg/
   on:
-    branch: dev
-- provider: NuGet
-  server: https://nuget.pkg.github.com/wangkanai/index.json
-  username: wangkanai
-  api_key:
-    secure: +WL9sBLNxRSwSRTu5btK/smYjwDFZjIGjg5P676G7O9UpGyJr5Hzi32SQruRS9EF
-  artifact: /.*\.nupkg/
-  on:
-    branch: dev
+    branch: main

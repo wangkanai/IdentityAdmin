@@ -12,7 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         /// <param name="user"></param>
         /// <param name="services">The <see cref="IServiceCollection" /> to attach to.</param>
-        public IdentityAdminBuilder(Type user, IServiceCollection services)
+        public IdentityAdminBuilder(Type? user, IServiceCollection services)
         {
             Services = services ?? throw new ArgumentNullException(nameof(services));
             UserType = user ?? throw new ArgumentNullException(nameof(user));
@@ -24,7 +24,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="user"></param>
         /// <param name="role"></param>
         /// <param name="services">The <see cref="IServiceCollection" /> to attach to.</param>
-        public IdentityAdminBuilder(Type user, Type role, IServiceCollection services)
+        public IdentityAdminBuilder(Type? user, Type? role, IServiceCollection services)
             : this(user, services)
         {
             RoleType = role ?? throw new ArgumentNullException(nameof(role));

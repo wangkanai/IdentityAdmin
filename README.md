@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/wangkanai/IdentityAdmin/dev/asset/Identity-admin-logo.svg?sanitize=true" width="650" alt="IdentityAdmin" />
+# <img src="https://raw.githubusercontent.com/wangkanai/IdentityAdmin/main/asset/Identity-admin-logo.svg?sanitize=true" width="650" alt="IdentityAdmin" />
 
 ***(Alpha Development)***
 
